@@ -1,0 +1,31 @@
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height:100vh;
+  background-image:
+    url('./images/logged.png.png'), 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  z-index: -1;
+}
+#bg{
+    border:2px solid white;
+    height: 450px;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+    color: white;
+}
+#bg:hover {
+    transform: translateY(-5px);
+}
+h1{
+    color: bisque;
+}
+

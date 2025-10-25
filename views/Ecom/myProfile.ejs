@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <style>
+    .profile-info {
+      padding: 20px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .profile-info h3 {
+      color: #bf3e3e;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .profile-info p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .profile-info span {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-info">
+    <h3>👤 My Profile</h3>
+    <p><span>Name:</span> <%= currUser?.username || "Guest" %></p>
+    <p><span>Email:</span> <%= currUser?.emailId || "N/A" %></p>
+    <p><span>Mobile:</span> <%= currUser?.mobile || "Not provided" %></p>
+    <p><span>Address:</span> <%= currUser?.address || "Not added yet" %></p>
+  </div>
+</body>
+</html>
